@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Check Your Love</title>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(135deg,#ff758c,#ff7eb3);
+text-align:center;
+color:white;
+margin:0;
+padding:0;
+}
+
+.banner{
+background:black;
+padding:20px;
+font-size:30px;
+font-weight:bold;
+}
+
+.box{
+background:white;
+color:black;
+width:300px;
+margin:auto;
+margin-top:40px;
+padding:20px;
+border-radius:15px;
+}
+
+input,textarea{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:8px;
+border:1px solid gray;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:#ff4d6d;
+color:white;
+font-size:16px;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e63950;
+}
+
+#result{
+font-size:22px;
+margin-top:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+❤️ Check Your Love ❤️
+</div>
+
+<div class="box">
+
+<h3>Submit Your Wish</h3>
+
+<input id="name" placeholder="Your Name">
+
+<input id="partner" placeholder="Partner Name">
+
+<textarea id="wish" placeholder="Write your wish"></textarea>
+
+<button onclick="love()">Check Score</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function love(){
+
+let score = Math.floor(Math.random()*100)+1
+
+document.getElementById("result").innerHTML =
+"❤️ Your Love Score: " + score + "%"
+
+}
+
+</script>
+
+</body>
+</html>
